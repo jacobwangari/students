@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records Management</title>
+
+    <link rel="stylesheet" type="text/css" href="static/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+
+<body>
+    <div class="jumbotron p-3">
+        <div class="well text-center">
+            <h1>Student Records Management</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col md-12">
+                <div class="jumbotron p-3 custom-transparent">
+                    <h2>
+                        Enter<b> Performance Records</b>
+                        <a href="view.php" class="btn btn-success float-right">View Records</a>
+
+                    </h2>
+                    <div class="container d-flex justify-content-center">
+                        <form class="center" action="add.php" method="post">
+                            <div class="mb-3">
+                                <label for="regNo" class="form-label">Registration Number</label>
+                                <input type="text" class="form-control" id="regNo" name="regNo"
+                                    placeholder="Enter Registration Number">
+                            </div>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" name="subject"
+                                    placeholder="Enter Subject">
+                            </div>
+                            <div class="mb-3">
+                                <label for="marks" class="form-label">Marks</label>
+                                <input type="number" class="form-control" id="marks" name="marks"
+                                    placeholder="Enter Marks">
+                            </div>
+                            <div class="mb-3">
+                                <label for="grade" class="form-label">Grade</label>
+                                <input type="text" class="form-control" id="grade" name="grade"
+                                    placeholder="Enter Grade">
+                            </div>
+                            <input type="submit" value="Add" class="btn btn-primary btn-lg mx-auto">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="">
+        <div class="card text-bg-dark mb-3 text-center">
+            <div class="card-body">
+                <p>Copyright &copy; 2023</p>
+                <a href="view.php" class="btn btn-primary">View Records</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+
+
+</html>
